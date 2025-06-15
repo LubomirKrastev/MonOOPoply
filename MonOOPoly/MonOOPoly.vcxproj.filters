@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{a6878023-ddca-44ce-8a1d-050343503c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{00aa553b-21e8-492a-bb40-3a32f1883c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{ab245e08-d4c8-4585-8821-a4075877152c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyString.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Property.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CardField.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="GoToJailField.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MovePositionCard.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="PaymentCard.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupPaymentCard.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CardDeck.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Mortgage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Bank.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Trade.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Monopoly.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyString.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="CardField.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GoToJailField.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="MovePositionCard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PaymentCard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupPaymentCard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="CardDeck.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Mortgage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Trade.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Monopoly.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
