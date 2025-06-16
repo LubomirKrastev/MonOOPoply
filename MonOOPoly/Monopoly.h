@@ -31,7 +31,6 @@ public:
     void startGame();
     void mainGameLoop();
 
-    // Save and load functionality
     void saveGame(const MyString& filename);
     void loadGame(const MyString& filename);
 

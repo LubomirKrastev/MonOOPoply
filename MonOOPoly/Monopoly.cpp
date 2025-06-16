@@ -110,11 +110,9 @@ void Monopoly::playTurn() {
         rollDice(*currentPlayer);
     }
 
-    // Check for bankruptcy
     if (currentPlayer->isBankrupt()) {
         std::cout << currentPlayer->getName() << " is bankrupt and out of the game!" << std::endl;
 
-        // Find all properties owned by this player
         Vector<Property*> allProperties;
         for (int i = 0; i < board->getSize(); i++) {
             Property* prop = dynamic_cast<Property*>(board->getField(i));
@@ -184,10 +182,8 @@ void Monopoly::saveGame(const MyString& filename) {
         return;
     }
 
-    // Save number of players
     file << players.size() << std::endl;
 
-    // Save player data
     for (size_t i = 0; i < players.size(); i++) {
         file << players[i]->getName() << " "
             << players[i]->getBalance() << " "
@@ -195,15 +191,12 @@ void Monopoly::saveGame(const MyString& filename) {
             << players[i]->isInJail() << std::endl;
     }
 
-    // Save current player index
     file << currentPlayerIndex << std::endl;
 
-    // Save property ownership
     for (int i = 0; i < board->getSize(); i++) {
         Property* prop = dynamic_cast<Property*>(board->getField(i));
         if (prop != nullptr && prop->isOwned()) {
             file << i << " ";
-            // Find owner index
             for (size_t j = 0; j < players.size(); j++) {
                 if (players[j] == prop->getOwner()) {
                     file << j << std::endl;
@@ -225,17 +218,14 @@ void Monopoly::loadGame(const MyString& filename) {
         return;
     }
 
-    // Clear existing players
     for (size_t i = 0; i < players.size(); i++) {
         delete players[i];
     }
     players.clear();
 
-    // Load number of players
     int numPlayers;
     file >> numPlayers;
 
-    // Load player data
     for (int i = 0; i < numPlayers; i++) {
         char nameBuffer[50];
         int balance, position;
@@ -252,10 +242,8 @@ void Monopoly::loadGame(const MyString& filename) {
         players.pushBack(player);
     }
 
-    // Load current player index
     file >> currentPlayerIndex;
 
-    // Load property ownership
     int fieldIndex, ownerIndex;
     while (file >> fieldIndex >> ownerIndex) {
         Property* prop = dynamic_cast<Property*>(board->getField(fieldIndex));
