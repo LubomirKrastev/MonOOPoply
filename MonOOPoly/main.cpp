@@ -4,10 +4,7 @@
 int main() {
     Monopoly game;
 
-    std::cout << "MONOPOLY GAME" << std::endl;
-    std::cout << std::endl;
-
-    std::cout << "1. New Game" << std::endl;
+    /*std::cout << "1. New Game" << std::endl;
     std::cout << "2. Load Game" << std::endl;
     std::cout << "Choose option: ";
 
@@ -20,13 +17,13 @@ int main() {
         std::cin >> filename;
         game.loadGame(MyString(filename));
     }
-    else {
+   */ //else {
         game.startGame();
-    }
+   // }
 
     game.mainGameLoop();
 
-    std::cout << "\nWould you like to save the game? (y/n): ";
+    /*std::cout << "\nWould you like to save the game? (y/n): ";
     char saveChoice;
     std::cin >> saveChoice;
 
@@ -35,9 +32,11 @@ int main() {
         std::cout << "Enter filename to save: ";
         std::cin >> filename;
         game.saveGame(MyString(filename));
-    }
+    }*/
 
-    std::cout << "\nThank you for playing Monopoly!" << std::endl;
+    std::cout << std::endl<< "Thank you for playing Monopoly!" << std::endl;
+
+    Bank::cleanup();
 
     return 0;
 }

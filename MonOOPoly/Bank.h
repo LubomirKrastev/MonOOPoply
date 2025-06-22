@@ -13,6 +13,7 @@ private:
 
 public:
     static Bank* getInstance();
+    static void cleanup();
 
     void distributeStartingMoney(Vector<Player*>& players);
     void collectPayment(int amount);

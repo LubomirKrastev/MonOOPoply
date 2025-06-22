@@ -16,6 +16,11 @@ Bank* Bank::getInstance() {
     return instance;
 }
 
+void Bank::cleanup() {
+    delete instance;
+    instance = nullptr;
+}
+
 void Bank::distributeStartingMoney(Vector<Player*>& players) {
     for (size_t i = 0; i < players.size(); i++) {
         totalMoney -= 1500;

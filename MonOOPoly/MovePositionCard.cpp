@@ -6,7 +6,16 @@ MovePositionCard::MovePositionCard(const MyString& desc, int moveSteps)
     : Card(desc), steps(moveSteps) {}
 
 void MovePositionCard::applyEffect(Player& player) {
-    if (steps > 0) {
+    if (description == "Advance to GO") {
+        std::cout << player.getName() << " advances to GO." << std::endl;
+
+        int currentPos = player.getPosition();
+        if (currentPos != 0) {
+            int stepsToGo = (40 - currentPos);
+            player.moveForward(stepsToGo);
+        }
+    }
+    else if (steps > 0) {
         std::cout << player.getName() << " moves forward " << steps << " spaces." << std::endl;
         player.moveForward(steps);
     }

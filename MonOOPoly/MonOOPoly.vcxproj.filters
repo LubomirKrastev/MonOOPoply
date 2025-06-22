@@ -126,7 +126,7 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="Vector.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

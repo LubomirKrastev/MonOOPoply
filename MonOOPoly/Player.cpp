@@ -1,5 +1,6 @@
 #include "Player.h"
 #include <iostream>
+#include <cstdlib>
 
 const unsigned FIELDS = 40;
 const unsigned JAIL_POSITION = 10;
@@ -57,17 +58,21 @@ bool Player::tryToGetOutOfJail() {
         inJail = false;
         turnsInJail = 0;
         std::cout << name << " rolled doubles and is free from jail!" << std::endl;
+
+        moveForward(die1 + die2);
         return true;
     }
 
-    if (turnsInJail >= 3) {
-        std::cout << name << " must pay $50 to get out of jail." << std::endl;
-        payMoney(50);
+    if (turnsInJail == 3) {
+        std::cout << name << " served 3 turns in jail and must leave." << std::endl;
         inJail = false;
         turnsInJail = 0;
+
+        moveForward(die1 + die2);
         return true;
     }
 
+    std::cout << name << " remains in jail." << std::endl;
     return false;
 }
 

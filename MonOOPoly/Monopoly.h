@@ -1,6 +1,7 @@
 #pragma once
 #include "Vector.hpp"
 #include "Board.h"
+#include "Bank.h"
 #include "CardDeck.h"
 #include "MyString.h"
 
@@ -16,11 +17,12 @@ private:
     CardDeck* communityChestDeck;
     int currentPlayerIndex;
     bool gameEnded;
+    int doublesCount;
 
     void initializePlayers();
     void initializeDecks();
     void playTurn();
-    void rollDice(Player& player);
+    bool rollDice(Player& player);
     void checkWinCondition();
     void displayGameState();
 

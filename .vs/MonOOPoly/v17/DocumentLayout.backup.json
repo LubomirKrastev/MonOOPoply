@@ -3,52 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Monopoly.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Trade.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GoToJailField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\GoToJailField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Property.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\PaymentCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\PaymentCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Property.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Monopoly.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MovePositionCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\MovePositionCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Property.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Bank.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Bank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Mortgage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Mortgage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Monopoly.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GroupPaymentCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\GroupPaymentCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GoToJailField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\GoToJailField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Field.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -67,24 +75,16 @@
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Trade.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Bank.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\PaymentCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\PaymentCard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Trade.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Property.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\PaymentCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -97,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Mortgage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Mortgage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Monopoly.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GroupPaymentCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -131,12 +127,16 @@
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Bank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Vector.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\Vector.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DABD0EBC-222E-4B31-B897-9CB69778D550}|MonOOPoly\\MonOOPoly.vcxproj|solutionrelative:MonOOPoly\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,76 +146,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Monopoly.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Monopoly.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.cpp*",
               "RelativeToolTip": "MonOOPoly\\Monopoly.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAADwv0QAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:18:54.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 6,
               "Title": "Monopoly.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Monopoly.h",
-              "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.h*",
-              "RelativeToolTip": "MonOOPoly\\Monopoly.h*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Monopoly.h",
+              "RelativeToolTip": "MonOOPoly\\Monopoly.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvx0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-15T14:18:48.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "Trade.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Trade.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.cpp",
               "RelativeToolTip": "MonOOPoly\\Trade.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:18:37.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Trade.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Trade.h",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Trade.h",
               "RelativeToolTip": "MonOOPoly\\Trade.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-15T14:18:28.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 3,
               "Title": "Board.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Board.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Board.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Board.cpp",
               "RelativeToolTip": "MonOOPoly\\Board.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:18:16.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "Board.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Board.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Board.h",
@@ -228,33 +228,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "Bank.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Bank.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.cpp",
               "RelativeToolTip": "MonOOPoly\\Bank.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:17:59.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 11,
               "Title": "Bank.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Bank.h",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Bank.h",
               "RelativeToolTip": "MonOOPoly\\Bank.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-15T14:17:53.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Mortgage.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Mortgage.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Mortgage.cpp",
@@ -280,20 +280,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "CardDeck.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\CardDeck.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\CardDeck.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\CardDeck.cpp",
               "RelativeToolTip": "MonOOPoly\\CardDeck.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:17:25.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "CardDeck.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\CardDeck.h",
               "RelativeDocumentMoniker": "MonOOPoly\\CardDeck.h",
@@ -306,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "GroupPaymentCard.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GroupPaymentCard.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\GroupPaymentCard.cpp",
@@ -319,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "GroupPaymentCard.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GroupPaymentCard.h",
               "RelativeDocumentMoniker": "MonOOPoly\\GroupPaymentCard.h",
@@ -332,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "PaymentCard.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\PaymentCard.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\PaymentCard.cpp",
@@ -364,7 +364,7 @@
               "RelativeDocumentMoniker": "MonOOPoly\\MovePositionCard.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MovePositionCard.cpp",
               "RelativeToolTip": "MonOOPoly\\MovePositionCard.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:16:32.975Z",
               "EditorCaption": ""
@@ -384,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Card.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Card.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Card.cpp",
@@ -397,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "Card.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Card.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Card.h",
@@ -410,33 +410,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 8,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Player.h",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.h",
               "RelativeToolTip": "MonOOPoly\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-15T14:15:45.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Player.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Player.cpp",
               "RelativeToolTip": "MonOOPoly\\Player.cpp",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwEYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:15:37.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "GoToJailField.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GoToJailField.h",
               "RelativeDocumentMoniker": "MonOOPoly\\GoToJailField.h",
@@ -449,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "GoToJailField.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\GoToJailField.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\GoToJailField.cpp",
@@ -462,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CardField.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\CardField.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\CardField.cpp",
@@ -475,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "CardField.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\CardField.h",
               "RelativeDocumentMoniker": "MonOOPoly\\CardField.h",
@@ -488,33 +488,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 9,
               "Title": "Property.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Property.h",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.h",
               "RelativeToolTip": "MonOOPoly\\Property.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-15T14:14:33.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Property.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Property.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Property.cpp",
               "RelativeToolTip": "MonOOPoly\\Property.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:14:20.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Field.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Field.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Field.cpp",
@@ -527,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "Field.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Field.h",
               "RelativeDocumentMoniker": "MonOOPoly\\Field.h",
@@ -540,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 31,
               "Title": "Vector.hpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\Vector.hpp",
               "RelativeDocumentMoniker": "MonOOPoly\\Vector.hpp",
@@ -553,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 33,
               "Title": "MyString.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MyString.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\MyString.cpp",
@@ -561,12 +561,11 @@
               "RelativeToolTip": "MonOOPoly\\MyString.cpp",
               "ViewState": "AgIAAKkAAAAAAAAAAAAAAGsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-15T14:10:53.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T14:10:53.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 32,
               "Title": "MyString.h",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\MyString.h",
               "RelativeDocumentMoniker": "MonOOPoly\\MyString.h",
@@ -579,13 +578,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\main.cpp",
               "RelativeDocumentMoniker": "MonOOPoly\\main.cpp",
               "ToolTip": "C:\\Users\\NITRO 5\\source\\repos\\MonOOPoly\\MonOOPoly\\main.cpp",
               "RelativeToolTip": "MonOOPoly\\main.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-15T14:06:42.061Z",
               "EditorCaption": ""
