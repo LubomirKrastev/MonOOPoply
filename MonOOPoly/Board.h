@@ -2,11 +2,13 @@
 #include "Vector.hpp"
 #include "Field.h"
 
-class CardDeck; 
+class CardDeck;
+class ColorGroup;
 
 class Board {
 private:
     Vector<Field*> fields;
+    Vector<ColorGroup*> colorGroups;
 
 public:
     Board();

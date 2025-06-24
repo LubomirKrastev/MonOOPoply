@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "MyString.h"
 
 class Player {
@@ -8,6 +8,7 @@ private:
     int position;
     bool inJail;
     int turnsInJail;
+    int getOutOfJailCards;
 
 public:
     Player(const MyString& playerName, int startingBalance = 1500);
@@ -16,15 +17,22 @@ public:
     int getBalance() const;
     int getPosition() const;
     bool isInJail() const;
+    int getTurnsInJail() const;
+    int getGetOutOfJailCards() const;
 
     void moveForward(int steps);
     void moveTo(int newPosition);
-    void goToJail();
-    bool tryToGetOutOfJail();
+    void goToJail(); 
+    int tryToGetOutOfJail();   
+    void incrementJailTurn();
 
     bool canAfford(int amount) const;
     void payMoney(int amount);
     void receiveMoney(int amount);
 
     bool isBankrupt() const;
+
+    void addGetOutOfJailCard();
+    bool hasGetOutOfJailCard() const;
+    void useGetOutOfJailCard();
 };

@@ -7,8 +7,6 @@ private:
     Vector<Card*> cards;
     int currentIndex;
 
-    void shuffle();
-
 public:
     CardDeck();
     ~CardDeck();

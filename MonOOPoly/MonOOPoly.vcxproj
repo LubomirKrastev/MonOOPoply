@@ -132,6 +132,7 @@
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="CardDeck.cpp" />
     <ClCompile Include="CardField.cpp" />
+    <ClCompile Include="ColorGroup.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="GoToJailField.cpp" />
     <ClCompile Include="GroupPaymentCard.cpp" />
@@ -143,6 +144,7 @@
     <ClCompile Include="PaymentCard.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Property.cpp" />
+    <ClCompile Include="SpecialCard.cpp" />
     <ClCompile Include="Trade.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +153,7 @@
     <ClInclude Include="Card.h" />
     <ClInclude Include="CardDeck.h" />
     <ClInclude Include="CardField.h" />
+    <ClInclude Include="ColorGroup.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="GoToJailField.h" />
     <ClInclude Include="GroupPaymentCard.h" />
@@ -161,6 +164,7 @@
     <ClInclude Include="PaymentCard.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Property.h" />
+    <ClInclude Include="SpecialCard.h" />
     <ClInclude Include="Trade.h" />
     <ClInclude Include="Vector.hpp" />
   </ItemGroup>

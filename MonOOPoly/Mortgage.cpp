@@ -6,6 +6,10 @@ int Mortgage::calculateNewRent(int baseRent) const {
     return static_cast<int>(baseRent * multiplier);
 }
 
+double Mortgage::getMultiplier() const {
+    return multiplier;
+}
+
 Cottage::Cottage() : Mortgage(1.15) {}
 
 Castle::Castle() : Mortgage(1.50) {}

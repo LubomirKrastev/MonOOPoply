@@ -75,6 +75,12 @@
     <ClCompile Include="Monopoly.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="ColorGroup.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialCard.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -127,6 +133,12 @@
     </ClInclude>
     <ClInclude Include="Vector.hpp">
       <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorGroup.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialCard.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

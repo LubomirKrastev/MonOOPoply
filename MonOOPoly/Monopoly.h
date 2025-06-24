@@ -1,7 +1,6 @@
 #pragma once
 #include "Vector.hpp"
 #include "Board.h"
-#include "Bank.h"
 #include "CardDeck.h"
 #include "MyString.h"
 
@@ -25,6 +24,9 @@ private:
     bool rollDice(Player& player);
     void checkWinCondition();
     void displayGameState();
+    void displayPlayerProperties(Player* player);
+    void checkAndDisplayMonopolies(Player* player);
+    void updateUtilityRents();
 
 public:
     Monopoly();

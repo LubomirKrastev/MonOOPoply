@@ -10,6 +10,7 @@ public:
     virtual ~Mortgage() = default;
 
     virtual int calculateNewRent(int baseRent) const;
+    double getMultiplier() const;
 };
 
 class Cottage : public Mortgage {

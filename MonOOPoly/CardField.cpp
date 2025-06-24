@@ -14,4 +14,4 @@ void CardField::onPlayerLanding(Player& player) {
         std::cout << "Card: " << card->getDescription() << std::endl;
         card->applyEffect(player);
     }
-}
+}   

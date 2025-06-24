@@ -3,6 +3,7 @@ C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\Board.cpp;C:\Users\NITRO 5\sou
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\Card.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\Card.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\CardDeck.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\CardDeck.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\CardField.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\CardField.obj
+C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\ColorGroup.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\ColorGroup.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\Field.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\Field.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\GoToJailField.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\GoToJailField.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\GroupPaymentCard.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\GroupPaymentCard.obj
@@ -14,4 +15,5 @@ C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\MyString.cpp;C:\Users\NITRO 5\
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\PaymentCard.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\PaymentCard.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\Player.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\Player.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\Property.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\Property.obj
+C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\SpecialCard.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\SpecialCard.obj
 C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\Trade.cpp;C:\Users\NITRO 5\source\repos\MonOOPoly\MonOOPoly\x64\Debug\Trade.obj

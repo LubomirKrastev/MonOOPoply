@@ -12,6 +12,10 @@ private:
     Vector<Property*> propertiesFrom2;
     int moneyFrom1;
     int moneyFrom2;
+    
+    bool validateTrade();
+    void transferProperties();
+    void transferMoney();
 
 public:
     Trade(Player* p1, Player* p2);
@@ -22,7 +26,5 @@ public:
     void setMoneyFromPlayer2(int amount);
 
     bool executeTrade();
-
-private:
-    bool validateTrade();
+    void displayTradeDetails() const;
 };
