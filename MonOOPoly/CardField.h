@@ -1,7 +1,7 @@
 #pragma once
 #include "Field.h"
 
-class CardDeck; 
+class CardDeck;
 
 class CardField : public Field {
 private:
@@ -10,5 +10,5 @@ private:
 public:
     CardField(const MyString& name, CardDeck* cardDeck);
 
-    void onPlayerLanding(Player& player) override;
+    void onPlayerLanding(Player& player, int diceRoll = 0) override;
 };

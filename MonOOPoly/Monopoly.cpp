@@ -94,6 +94,307 @@ void Monopoly::startGame() {
     std::cout << "Each player starts with $1500" << std::endl;
 }
 
+Vector<Property*> Monopoly::getPlayerProperties(Player* player) {
+    Vector<Property*> playerProperties;
+
+    for (int i = 0; i < board->getSize(); i++) {
+        Property* prop = dynamic_cast<Property*>(board->getField(i));
+        if (prop != nullptr && prop->getOwner() == player && prop->getPrice() > 0) {
+            playerProperties.pushBack(prop);
+        }
+    }
+
+    return playerProperties;
+}
+
+int Monopoly::calculatePlayerNetWorth(Player* player) {
+    int netWorth = player->getBalance();
+
+    Vector<Property*> properties = getPlayerProperties(player);
+    for (size_t i = 0; i < properties.size(); i++) {
+        Property* prop = properties[i];
+
+        if (!prop->getIsMortgaged()) {
+            netWorth += prop->getPrice() / 2;
+        }
+
+        if (prop->getColorGroup() != nullptr) {
+            netWorth += prop->getHouseCount() * (prop->getColorGroup()->getHouseCost() / 2);
+            netWorth += prop->getHotelCount() * (prop->getColorGroup()->getHotelCost() / 2);
+        }
+    }
+
+    return netWorth;
+}
+
+void Monopoly::sellBuildings(Player* player) {
+    Vector<Property*> properties = getPlayerProperties(player);
+    bool hasBuildings = false;
+
+    for (size_t i = 0; i < properties.size(); i++) {
+        if (properties[i]->getHouseCount() > 0 || properties[i]->getHotelCount() > 0) {
+            hasBuildings = true;
+            break;
+        }
+    }
+
+    if (!hasBuildings) {
+        std::cout << "You have no buildings to sell." << std::endl;
+        return;
+    }
+
+    std::cout << "\nProperties with buildings:" << std::endl;
+    for (size_t i = 0; i < properties.size(); i++) {
+        Property* prop = properties[i];
+        if (prop->getHouseCount() > 0 || prop->getHotelCount() > 0) {
+            std::cout << i + 1 << ". " << prop->getName() << " - ";
+            if (prop->getHotelCount() > 0) {
+                std::cout << "1 Hotel (sell for $" << prop->getColorGroup()->getHotelCost() / 2 << ")";
+            }
+            else {
+                std::cout << prop->getHouseCount() << " Houses (sell for $"
+                    << prop->getColorGroup()->getHouseCost() / 2 << " each)";
+            }
+            std::cout << std::endl;
+        }
+    }
+
+    std::cout << "Select property (0 to cancel): ";
+    int choice;
+    std::cin >> choice;
+    std::cin.ignore();
+
+    if (choice > 0 && choice <= properties.size()) {
+        Property* selectedProp = properties[choice - 1];
+        if (selectedProp->getHotelCount() > 0) {
+            selectedProp->sellHotel();
+        }
+        else if (selectedProp->getHouseCount() > 0) {
+            std::cout << "How many houses to sell? (1-" << selectedProp->getHouseCount() << "): ";
+            int housesToSell;
+            std::cin >> housesToSell;
+            std::cin.ignore();
+
+            if (housesToSell > 0 && housesToSell <= selectedProp->getHouseCount()) {
+                for (int i = 0; i < housesToSell; i++) {
+                    selectedProp->sellHouse();
+                }
+            }
+        }
+    }
+}
+
+void Monopoly::mortgageProperty(Player* player) {
+    Vector<Property*> properties = getPlayerProperties(player);
+    Vector<Property*> mortgageable;
+
+    for (size_t i = 0; i < properties.size(); i++) {
+        if (!properties[i]->getIsMortgaged() &&
+            properties[i]->getHouseCount() == 0 &&
+            properties[i]->getHotelCount() == 0) {
+            mortgageable.pushBack(properties[i]);
+        }
+    }
+
+    if (mortgageable.empty()) {
+        std::cout << "No properties available to mortgage." << std::endl;
+        return;
+    }
+
+    std::cout << "\nProperties available to mortgage:" << std::endl;
+    for (size_t i = 0; i < mortgageable.size(); i++) {
+        std::cout << i + 1 << ". " << mortgageable[i]->getName()
+            << " - Mortgage value: $" << mortgageable[i]->getPrice() / 2 << std::endl;
+    }
+
+    std::cout << "Select property to mortgage (0 to cancel): ";
+    int choice;
+    std::cin >> choice;
+    std::cin.ignore();
+
+    if (choice > 0 && choice <= mortgageable.size()) {
+        mortgageable[choice - 1]->mortgageProperty();
+    }
+}
+
+void Monopoly::unmortgageProperty(Player* player) {
+    Vector<Property*> properties = getPlayerProperties(player);
+    Vector<Property*> mortgaged;
+
+    for (size_t i = 0; i < properties.size(); i++) {
+        if (properties[i]->getIsMortgaged()) {
+            mortgaged.pushBack(properties[i]);
+        }
+    }
+
+    if (mortgaged.empty()) {
+        std::cout << "No mortgaged properties." << std::endl;
+        return;
+    }
+
+    std::cout << "\nMortgaged properties:" << std::endl;
+    for (size_t i = 0; i < mortgaged.size(); i++) {
+        int unmortgageCost = (int)((mortgaged[i]->getPrice() / 2) * 1.1);
+        std::cout << i + 1 << ". " << mortgaged[i]->getName()
+            << " - Unmortgage cost: $" << unmortgageCost << std::endl;
+    }
+
+    std::cout << "Select property to unmortgage (0 to cancel): ";
+    int choice;
+    std::cin >> choice;
+    std::cin.ignore();
+
+    if (choice > 0 && choice <= mortgaged.size()) {
+        mortgaged[choice - 1]->unmortgageProperty();
+    }
+}
+
+void Monopoly::offerPropertyManagement(Player* player) {
+    while (true) {
+        std::cout << "\nProperty Management Options:" << std::endl;
+        std::cout << "Current balance: $" << player->getBalance() << std::endl;
+        std::cout << "1. Sell buildings" << std::endl;
+        std::cout << "2. Mortgage property" << std::endl;
+        std::cout << "3. Unmortgage property" << std::endl;
+        std::cout << "0. Done" << std::endl;
+        std::cout << "Choice: ";
+
+        int choice;
+        std::cin >> choice;
+        std::cin.ignore();
+
+        switch (choice) {
+        case 1:
+            sellBuildings(player);
+            break;
+        case 2:
+            mortgageProperty(player);
+            break;
+        case 3:
+            unmortgageProperty(player);
+            break;
+        case 0:
+            return;
+        default:
+            std::cout << "Invalid choice." << std::endl;
+        }
+    }
+}
+
+bool Monopoly::handlePlayerDebt(Player* debtor, int amountOwed, Player* creditor) {
+    if (debtor->getBalance() >= amountOwed) {
+        return true;
+    }
+
+    std::cout << "\n" << debtor->getName() << " owes $" << amountOwed
+        << " but only has $" << debtor->getBalance() << "!" << std::endl;
+
+    int netWorth = calculatePlayerNetWorth(debtor);
+    std::cout << "Total net worth: $" << netWorth << std::endl;
+
+    if (netWorth < amountOwed) {
+        std::cout << debtor->getName() << " cannot raise enough money even by selling everything!" << std::endl;
+        return false;
+    }
+
+    std::cout << "You must raise $" << (amountOwed - debtor->getBalance()) << " to pay this debt." << std::endl;
+
+    while (debtor->getBalance() < amountOwed) {
+        offerPropertyManagement(debtor);
+
+        if (debtor->getBalance() >= amountOwed) {
+            std::cout << "Debt paid successfully!" << std::endl;
+            return true;
+        }
+
+        std::cout << "\nStill need $" << (amountOwed - debtor->getBalance()) << std::endl;
+        std::cout << "Continue trying to raise money? (y/n): ";
+        char choice;
+        std::cin >> choice;
+        std::cin.ignore();
+
+        if (choice != 'y' && choice != 'Y') {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+void Monopoly::handlePayment(Player* payer, Player* receiver, int amount, const MyString& reason) {
+    std::cout << payer->getName() << " must pay $" << amount;
+    if (receiver != nullptr) {
+        std::cout << " to " << receiver->getName();
+    }
+    std::cout << " for " << reason << std::endl;
+
+    if (payer->canAfford(amount)) {
+        payer->payMoney(amount);
+        if (receiver != nullptr) {
+            receiver->receiveMoney(amount);
+        }
+        else {
+            bank->collectPayment(amount);
+        }
+    }
+    else {
+        std::cout << payer->getName() << " cannot afford this payment!" << std::endl;
+
+        if (handlePlayerDebt(payer, amount, receiver)) {
+            payer->payMoney(amount);
+            if (receiver != nullptr) {
+                receiver->receiveMoney(amount);
+            }
+            else {
+                bank->collectPayment(amount);
+            }
+            std::cout << "Payment made after managing properties." << std::endl;
+        }
+        else {
+            std::cout << payer->getName() << " is BANKRUPT!" << std::endl;
+
+            int remainingMoney = payer->getBalance();
+            if (remainingMoney > 0) {
+                payer->payMoney(remainingMoney);
+                if (receiver != nullptr) {
+                    receiver->receiveMoney(remainingMoney);
+                }
+                else {
+                    bank->collectPayment(remainingMoney);
+                }
+            }
+
+            if (receiver != nullptr) {
+                Vector<Property*> bankruptProperties = getPlayerProperties(payer);
+                for (size_t i = 0; i < bankruptProperties.size(); i++) {
+                    bankruptProperties[i]->removeAllBuildings();
+                    bankruptProperties[i]->setOwner(receiver);
+                    if (bankruptProperties[i]->getIsMortgaged()) {
+                        std::cout << receiver->getName() << " receives "
+                            << bankruptProperties[i]->getName() << " (mortgaged)" << std::endl;
+                    }
+                    else {
+                        std::cout << receiver->getName() << " receives "
+                            << bankruptProperties[i]->getName() << std::endl;
+                    }
+                }
+            }
+            else {
+                Vector<Property*> allProperties;
+                for (int i = 0; i < board->getSize(); i++) {
+                    Property* prop = dynamic_cast<Property*>(board->getField(i));
+                    if (prop != nullptr) {
+                        allProperties.pushBack(prop);
+                    }
+                }
+                bank->handleBankruptcy(payer, allProperties);
+            }
+
+            payer->payMoney(payer->getBalance() + 1);
+        }
+    }
+}
+
 bool Monopoly::rollDice(Player& player) {
     int die1 = (rand() % 6) + 1;
     int die2 = (rand() % 6) + 1;
@@ -117,19 +418,53 @@ bool Monopoly::rollDice(Player& player) {
 
     int positionBeforeField = player.getPosition();
 
-    field->onPlayerLanding(player);
+    Property* prop = dynamic_cast<Property*>(field);
+    if (prop != nullptr) {
+        MyString fieldName = prop->getName();
+
+        if (fieldName == "Income Tax") {
+            handlePayment(&player, nullptr, 200, "income tax");
+        }
+        else if (fieldName == "Luxury Tax") {
+            handlePayment(&player, nullptr, 100, "luxury tax");
+        }
+        // Handle rent payments
+        else if (prop->isOwned() && prop->getOwner() != &player && !prop->getIsMortgaged()) {
+            if (!prop->getOwner()->isInJail()) {
+                int rentAmount = 0;
+
+                if (fieldName == "Electric Company" || fieldName == "Water Works") {
+                    rentAmount = total * prop->getRent();
+                    handlePayment(&player, prop->getOwner(), rentAmount, "utility rent");
+                }
+                else {
+                    rentAmount = prop->getRent();
+                    handlePayment(&player, prop->getOwner(), rentAmount, "rent");
+                }
+            }
+            else {
+                std::cout << prop->getOwner()->getName() << " is in jail and cannot collect rent." << std::endl;
+            }
+        }
+        else {
+            field->onPlayerLanding(player, total);
+        }
+    }
+    else {
+        field->onPlayerLanding(player, total);
+    }
 
     if (player.getPosition() != positionBeforeField && !player.isInJail()) {
         Field* newField = board->getField(player.getPosition());
         std::cout << player.getName() << " lands on " << newField->getName() << std::endl;
-        newField->onPlayerLanding(player);
+        newField->onPlayerLanding(player, total);
     }
 
-    Property* prop = dynamic_cast<Property*>(field);
-    if (prop != nullptr) {
-        MyString fieldName = prop->getName();
+    Property* utilityCheck = dynamic_cast<Property*>(field);
+    if (utilityCheck != nullptr) {
+        MyString fieldName = utilityCheck->getName();
         if (fieldName == "Electric Company" || fieldName == "Water Works") {
-            if (prop->getOwner() == &player) {
+            if (utilityCheck->getOwner() == &player) {
                 updateUtilityRents();
             }
         }
@@ -159,7 +494,7 @@ void Monopoly::playTurn() {
             if (diceTotal > 0) {
                 Field* field = board->getField(currentPlayer->getPosition());
                 std::cout << currentPlayer->getName() << " lands on " << field->getName() << std::endl;
-                field->onPlayerLanding(*currentPlayer);
+                field->onPlayerLanding(*currentPlayer, diceTotal);
             }
 
             continueRolling = false;

@@ -6,6 +6,7 @@
 
 class Player;
 class Bank;
+class Property;
 
 class Monopoly {
 private:
@@ -27,6 +28,15 @@ private:
     void displayPlayerProperties(Player* player);
     void checkAndDisplayMonopolies(Player* player);
     void updateUtilityRents();
+
+    bool handlePlayerDebt(Player* debtor, int amountOwed, Player* creditor = nullptr);
+    void offerPropertyManagement(Player* player);
+    void mortgageProperty(Player* player);
+    void unmortgageProperty(Player* player);
+    void sellBuildings(Player* player);
+    Vector<Property*> getPlayerProperties(Player* player);
+    int calculatePlayerNetWorth(Player* player);
+    void handlePayment(Player* payer, Player* receiver, int amount, const MyString& reason);
 
 public:
     Monopoly();

@@ -26,7 +26,7 @@ Property::~Property() {
     delete mortgage;
 }
 
-void Property::onPlayerLanding(Player& player) {
+void Property::onPlayerLanding(Player& player, int diceRoll) {
     if (price == 0) {
         if (name == "GO") {
             std::cout << player.getName() << " is on GO." << std::endl;
@@ -36,10 +36,6 @@ void Property::onPlayerLanding(Player& player) {
         }
         else if (name == "Free Parking") {
             std::cout << player.getName() << " is on Free Parking." << std::endl;
-        }
-        else if (baseRent < 0) {
-            std::cout << player.getName() << " must pay $" << -baseRent << " tax." << std::endl;
-            player.payMoney(-baseRent);
         }
         return;
     }
@@ -60,41 +56,7 @@ void Property::onPlayerLanding(Player& player) {
             std::cout << player.getName() << " cannot afford " << name << std::endl;
         }
     }
-    else if (owner != &player) {
-        if (isMortgaged) {
-            std::cout << name << " is mortgaged - no rent due!" << std::endl;
-        }
-        else if (owner->isInJail()) {
-            std::cout << owner->getName() << " is in jail and cannot collect rent." << std::endl;
-        }
-        else {
-            if (name == "Electric Company" || name == "Water Works") {
-                std::cout << player.getName() << " must pay utility rent to " << owner->getName() << std::endl;
-
-                int die1 = (rand() % 6) + 1;
-                int die2 = (rand() % 6) + 1;
-                int diceTotal = die1 + die2;
-
-                std::cout << player.getName() << " rolls " << die1 << " and " << die2
-                    << " (Total: " << diceTotal << ")" << std::endl;
-
-                int utilityRent = diceTotal * currentRent;
-
-                std::cout << "Rent: " << diceTotal << " x " << currentRent
-                    << " = $" << utilityRent << std::endl;
-
-                player.payMoney(utilityRent);
-                owner->receiveMoney(utilityRent);
-            }
-            else {
-                std::cout << player.getName() << " pays $" << currentRent << " rent to "
-                    << owner->getName() << std::endl;
-                player.payMoney(currentRent);
-                owner->receiveMoney(currentRent);
-            }
-        }
-    }
-    else {
+    else if (owner == &player) {
         std::cout << player.getName() << " owns this property." << std::endl;
 
         if (isMortgaged) {
@@ -120,51 +82,92 @@ void Property::onPlayerLanding(Player& player) {
                 }
                 std::cout << std::endl;
 
-                if (hotelCount == 0) {  
-                    int maxHousesCanBuild = 0;
+                if (hotelCount == 0) {
                     int houseCost = colorGroup->getHouseCost();
+                    std::cout << "House cost: $" << houseCost << " each." << std::endl;
+                    std::cout << "Your balance: $" << player.getBalance() << std::endl;
 
                     const Vector<Property*>& groupProps = colorGroup->getProperties();
                     int minHouses = 4;
+                    bool allPropertiesEqual = true;
 
                     for (size_t i = 0; i < groupProps.size(); i++) {
-                        if (groupProps[i] != this && groupProps[i]->houseCount < minHouses) {
+                        if (groupProps[i]->houseCount < minHouses) {
                             minHouses = groupProps[i]->houseCount;
+                        }
+                        if (groupProps[i] != this && groupProps[i]->houseCount != houseCount) {
+                            allPropertiesEqual = false;
                         }
                     }
 
-                    int maxAllowedHouses = minHouses + 1;
-                    if (maxAllowedHouses > 4) maxAllowedHouses = 4;
+                    int maxHousesCanBuild = 0;
 
-                    maxHousesCanBuild = maxAllowedHouses - houseCount;
-
-                    int canAffordHouses = player.getBalance() / houseCost;
-                    if (maxHousesCanBuild > canAffordHouses) {
-                        maxHousesCanBuild = canAffordHouses;
+                    if (houseCount == minHouses) {
+                        if (allPropertiesEqual) {
+                            maxHousesCanBuild = 4 - houseCount;
+                        }
+                        else {
+                            maxHousesCanBuild = 1;
+                        }
+                    }
+                    else if (houseCount == minHouses + 1) {
+                        maxHousesCanBuild = 0;
                     }
 
                     if (maxHousesCanBuild > 0) {
-                        std::cout << "You can build up to " << maxHousesCanBuild
-                            << " house(s) on this property." << std::endl;
-                        std::cout << "House cost: $" << houseCost << " each." << std::endl;
-                        std::cout << "How many houses would you like to build? (0-"
-                            << maxHousesCanBuild << "): ";
+                        int canAffordHouses = player.getBalance() / houseCost;
 
-                        int housesToBuild;
-                        std::cin >> housesToBuild;
-                        std::cin.ignore();
-
-                        if (housesToBuild > 0 && housesToBuild <= maxHousesCanBuild) {
-                            int totalCost = housesToBuild * houseCost;
-                            std::cout << "Building " << housesToBuild << " house(s) for $"
-                                << totalCost << "..." << std::endl;
-
-                            player.payMoney(totalCost);
-                            for (int i = 0; i < housesToBuild; i++) {
-                                buildHouse();
+                        if (canAffordHouses == 0) {
+                            std::cout << "You cannot afford any houses! (Need at least $" << houseCost << ")" << std::endl;
+                        }
+                        else {
+                            if (maxHousesCanBuild > canAffordHouses) {
+                                maxHousesCanBuild = canAffordHouses;
                             }
 
-                            std::cout << "Total houses on " << name << ": " << houseCount << std::endl;
+                            std::cout << "You can build up to " << maxHousesCanBuild
+                                << " house(s) on this property." << std::endl;
+
+                            std::cout << "\nCurrent development in " << colorGroup->getName() << " group:" << std::endl;
+                            for (size_t i = 0; i < groupProps.size(); i++) {
+                                std::cout << "  " << groupProps[i]->getName() << ": "
+                                    << groupProps[i]->houseCount << " houses";
+                                if (groupProps[i]->hotelCount > 0) {
+                                    std::cout << " (HOTEL)";
+                                }
+                                std::cout << std::endl;
+                            }
+
+                            std::cout << "\nHow many houses would you like to build? (0-"
+                                << maxHousesCanBuild << "): ";
+
+                            int housesToBuild;
+                            std::cin >> housesToBuild;
+                            std::cin.ignore();
+
+                            if (housesToBuild > 0 && housesToBuild <= maxHousesCanBuild) {
+                                int totalCost = housesToBuild * houseCost;
+
+                                if (player.getBalance() >= totalCost) {
+                                    std::cout << "Building " << housesToBuild << " house(s) for $"
+                                        << totalCost << "..." << std::endl;
+
+                                    player.payMoney(totalCost);
+                                    for (int i = 0; i < housesToBuild; i++) {
+                                        buildHouse();
+                                    }
+
+                                    std::cout << "Total houses on " << name << ": " << houseCount << std::endl;
+                                    std::cout << "Remaining balance: $" << player.getBalance() << std::endl;
+                                }
+                                else {
+                                    std::cout << "Insufficient funds! You need $" << totalCost
+                                        << " but only have $" << player.getBalance() << std::endl;
+                                }
+                            }
+                            else if (housesToBuild > maxHousesCanBuild) {
+                                std::cout << "You can only build up to " << maxHousesCanBuild << " houses!" << std::endl;
+                            }
                         }
                     }
                     else if (houseCount == 4) {
@@ -180,10 +183,12 @@ void Property::onPlayerLanding(Player& player) {
                                 if (buildChoice == 'y' || buildChoice == 'Y') {
                                     player.payMoney(hotelCost);
                                     buildHotel();
+                                    std::cout << "Hotel built! Remaining balance: $" << player.getBalance() << std::endl;
                                 }
                             }
                             else {
-                                std::cout << "You need $" << hotelCost << " to build a hotel." << std::endl;
+                                std::cout << "You need $" << hotelCost << " to build a hotel but only have $"
+                                    << player.getBalance() << std::endl;
                             }
                         }
                         else {
@@ -192,7 +197,7 @@ void Property::onPlayerLanding(Player& player) {
                     }
                     else {
                         std::cout << "You must build evenly across all properties." << std::endl;
-                        
+
                         const Vector<Property*>& groupProps = colorGroup->getProperties();
                         std::cout << "\nCurrent development in " << colorGroup->getName() << " group:" << std::endl;
                         for (size_t i = 0; i < groupProps.size(); i++) {
@@ -254,7 +259,7 @@ void Property::onPlayerLanding(Player& player) {
                 std::cout << "Special property - no building allowed." << std::endl;
             }
         }
-        }
+    }
 }
 
 int Property::getPrice() const { return price; }
@@ -358,7 +363,7 @@ void Property::sellHouse() {
 void Property::sellHotel() {
     if (hotelCount > 0 && colorGroup != nullptr) {
         hotelCount = 0;
-        houseCount = 4; 
+        houseCount = 4;
         int sellPrice = colorGroup->getHotelCost() / 2;
         if (owner != nullptr) {
             owner->receiveMoney(sellPrice);
@@ -445,7 +450,7 @@ void Property::updateRent() {
         }
     }
     else if (hasMonopoly() && baseRent > 0) {
-        currentRent = baseRent * 2; 
+        currentRent = baseRent * 2;
     }
     else {
         currentRent = baseRent;

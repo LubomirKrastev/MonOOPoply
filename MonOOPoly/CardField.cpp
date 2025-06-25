@@ -6,7 +6,7 @@
 CardField::CardField(const MyString& name, CardDeck* cardDeck)
     : Field(name), deck(cardDeck) {}
 
-void CardField::onPlayerLanding(Player& player) {
+void CardField::onPlayerLanding(Player& player, int diceRoll) {
     std::cout << player.getName() << " draws a " << name << " card." << std::endl;
 
     if (deck != nullptr) {
@@ -14,4 +14,4 @@ void CardField::onPlayerLanding(Player& player) {
         std::cout << "Card: " << card->getDescription() << std::endl;
         card->applyEffect(player);
     }
-}   
+}

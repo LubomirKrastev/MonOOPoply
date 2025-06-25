@@ -3,6 +3,6 @@
 
 GoToJailField::GoToJailField() : Field("Go to Jail") {}
 
-void GoToJailField::onPlayerLanding(Player& player) {
+void GoToJailField::onPlayerLanding(Player& player, int diceRoll) {
     player.goToJail();
 }

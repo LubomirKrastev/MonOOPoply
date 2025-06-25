@@ -5,5 +5,5 @@ class GoToJailField : public Field {
 public:
     GoToJailField();
 
-    void onPlayerLanding(Player& player) override;
+    void onPlayerLanding(Player& player, int diceRoll = 0) override;
 };

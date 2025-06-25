@@ -11,6 +11,6 @@ public:
     Field(const MyString& fieldName);
     virtual ~Field() = default;
 
-    virtual void onPlayerLanding(Player& player) = 0;
+    virtual void onPlayerLanding(Player& player, int diceRoll = 0) = 0;
     const MyString& getName() const;
 };

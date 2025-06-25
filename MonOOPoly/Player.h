@@ -22,13 +22,17 @@ public:
 
     void moveForward(int steps);
     void moveTo(int newPosition);
-    void goToJail(); 
-    int tryToGetOutOfJail();   
+    void goToJail();
+    int tryToGetOutOfJail();
     void incrementJailTurn();
 
     bool canAfford(int amount) const;
     void payMoney(int amount);
     void receiveMoney(int amount);
+
+    bool tryToPayDebt(int amount);
+    int calculateNetWorth() const;
+    bool handleDebt(int amountOwed, Player* creditor = nullptr);
 
     bool isBankrupt() const;
 

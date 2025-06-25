@@ -28,7 +28,7 @@ public:
         int rent1H, int rent2H, int rent3H, int rent4H, int rentHotel);
     ~Property();
 
-    void onPlayerLanding(Player& player) override;
+    void onPlayerLanding(Player& player, int diceRoll = 0) override;
 
     int getPrice() const;
     int getRent() const;
@@ -63,7 +63,7 @@ public:
     void updateRent();
     bool hasMonopoly() const;
 
-    void setRent(int newRent);  
-    
+    void setRent(int newRent);
+
     void removeAllBuildings();
 };
